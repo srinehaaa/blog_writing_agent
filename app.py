@@ -55,7 +55,7 @@ gibson_svg_inline = f'<span style="height:80px; width:200px; display:inline-bloc
 title_html = f"""
 <div style='display:flex; align-items:center; width:100%; padding:24px 0;'>
   <h1 style='margin:0; padding:0; font-size:2.5rem; font-weight:bold; display:flex; align-items:center;'>
-    Blog Writing Agent with {gibson_svg_inline} Memori
+    🤖 AI Blog Writing Agent using Google Gemini
   </h1>
 </div>
 """
@@ -82,30 +82,12 @@ if memory_system is None:
 memory_tool = create_memory_tool_instance(memory_system)
 
 with st.sidebar:
-    st.image("./assets/digital_ocean.png", width=250)
+    st.sidebar.subheader("⚙️ AI Configuration")
+st.sidebar.write("Provider: Google Gemini")
+st.sidebar.write("Model: Gemini 2.5 Flash")
+st.sidebar.write("Memory: Disabled")
 
-    digital_ocean_endpoint = st.text_input(
-        "Digital Ocean Endpoint",
-        value=os.getenv("DIGITAL_OCEAN_ENDPOINT", ""),
-        type="password",
-        help="Your Digital Ocean endpoint URL",
-    )
-
-    digital_ocean_key = st.text_input(
-        "Digital Ocean Agent Access Key",
-        value=os.getenv("DIGITAL_OCEAN_AGENT_ACCESS_KEY", ""),
-        type="password",
-        help="Your Digital Ocean agent access key",
-    )
-
-    if st.button("Save Digital Ocean Config", use_container_width=True):
-        if digital_ocean_endpoint:
-            os.environ["DIGITAL_OCEAN_ENDPOINT"] = digital_ocean_endpoint
-        if digital_ocean_key:
-            os.environ["DIGITAL_OCEAN_AGENT_ACCESS_KEY"] = digital_ocean_key
-        st.success("Digital Ocean configuration saved successfully!")
-
-    st.markdown("---")
+st.sidebar.markdown("---")
 
 
 def knowledge_agent_sidebar():
@@ -276,7 +258,8 @@ def writing_agent_main():
     if not topic:
         st.markdown("### About this application")
         st.markdown(
-            "This application is powered by Memori and Digital Ocean Gradient to help you create blog in your own style."
+            "This application is powered by Google Gemini AI to help you create blog posts in your own writing style."
+
         )
         st.markdown("**It features:**")
         st.markdown(
