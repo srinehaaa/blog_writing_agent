@@ -5,18 +5,17 @@
 A powerful AI-powered blog writing tool that analyzes your writing style and generates new content using Gemini AI. This application allows users to upload their previous articles, analyze their unique writing style, and generate new blog posts that sound exactly like them.
 
 ## Features ✨
+**Writing Style Analysis**: Upload your articles to analyse tone, voice, structure, and vocabulary  
+**AI-Powered Content Generation**: Uses Gemini AI to create content in your style  
+**Memory Integration**: Stores your writing style profile using Memori for long-term learning  
+**Multi-Format Support**: Handles PDF, DOCX, and TXT documents  
+**Style Matching**: Generates content that perfectly matches your writing personality  
+**Content Management**: Download, copy, and save generated blog posts  
+**Real-time Analysis**: Instant writing style insights with detailed breakdowns  
+**Easy Configuration**: Simple setup with API keys and environment variables  
+**Secure Processing**: Local document processing with no external storage  
 
-✍️ **Writing Style Analysis**: Upload your articles to analyse tone, voice, structure, and vocabulary  
-🤖 **AI-Powered Content Generation**: Uses Gemini AI to create content in your style  
-💾 **Memory Integration**: Stores your writing style profile using Memori for long-term learning  
-📚 **Multi-Format Support**: Handles PDF, DOCX, and TXT documents  
-🎯 **Style Matching**: Generates content that perfectly matches your writing personality  
-📝 **Content Management**: Download, copy, and save generated blog posts  
-🔍 **Real-time Analysis**: Instant writing style insights with detailed breakdowns  
-⚙️ **Easy Configuration**: Simple setup with API keys and environment variables  
-🔒 **Secure Processing**: Local document processing with no external storage  
-
-## Prerequisites 🛠️
+## Prerequisites 
 
 - Python 3.10+
 - Gemini AI API credentials
@@ -46,7 +45,7 @@ uv run streamlit run app.py
 
 Open your web browser and navigate to the provided local URL (typically http://localhost:8501)
 
-## How It Works 🔄
+## How It Works 
 
 ### 1. **Knowledge Agent (Sidebar)**
 - **Upload Document**: Upload your previous articles (PDF, DOCX, or TXT)
@@ -58,7 +57,7 @@ Open your web browser and navigate to the provided local URL (typically http://l
 - **Content Generation**: AI creates blog posts using your stored writing style
 - **Content Management**: Download, copy, and save your generated content
 
-## Example Workflow 🔄
+## Example Workflow 
 
 1. **Upload Article**: Upload a blog post that represents your writing style
 2. **Analyze Style**: Click "🔍 Analyze Writing Style" to get insights
@@ -67,7 +66,7 @@ Open your web browser and navigate to the provided local URL (typically http://l
 5. **Get Results**: Receive AI-generated content that sounds like you wrote it
 6. **Manage Content**: Download, copy, or save your generated posts
 
-## Supported Document Formats 📄
+## Supported Document Formats 
 
 - **PDF**: Portable Document Format files
 
@@ -76,19 +75,19 @@ Open your web browser and navigate to the provided local URL (typically http://l
 
 The AI analyzes your writing across multiple dimensions:
 
-- **🎭 Tone**: Formal, casual, professional, friendly, etc.
-- **🗣️ Voice**: Authoritative, conversational, technical, etc.
-- **📐 Structure**: Paragraph organization, transitions, flow
-- **📚 Vocabulary**: Complexity level and word choice patterns
-- **📝 Sentence Patterns**: Length, structure, and rhythm
-- **💡 Examples Style**: How you use analogies and examples
+- ** Tone**: Formal, casual, professional, friendly, etc.
+- ** Voice**: Authoritative, conversational, technical, etc.
+- ** Structure**: Paragraph organization, transitions, flow
+- ** Vocabulary**: Complexity level and word choice patterns
+- ** Sentence Patterns**: Length, structure, and rhythm
+- ** Examples Style**: How you use analogies and examples
 
-## API Configuration 🔑
+## API Configuration 
 
 ### Gemini AI
 - **API Key**: Your Gemini AI access key
 
-## Architecture 🏗️
+## Architecture 
 
 ### Modular Design
 - **UI Layer (app.py)**: Streamlit interface and user interactions
