@@ -4,7 +4,7 @@
 
 A powerful AI-powered blog writing tool that analyzes your writing style and generates new content using Gemini AI. This application allows users to upload their previous articles, analyze their unique writing style, and generate new blog posts that sound exactly like them.
 
-## Features ✨
+## Features 
 **Writing Style Analysis**: Upload your articles to analyse tone, voice, structure, and vocabulary  
 **AI-Powered Content Generation**: Uses Gemini AI to create content in your style  
 **Memory Integration**: Stores your writing style profile using Memori for long-term learning  
